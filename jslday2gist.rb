@@ -108,9 +108,10 @@ else
 
 grosspay = hrsworked * payrate + (excesshrs * (1.5*payrate))
 
-print "You earned $#{grosspay.round(2)}."
+print "You earned $#{'%.2f' % grosspay.round(2)}."
 
 end
+
   
 #Rewrite the solution to the previous problem adding this modification: do not process any employee if their hours worked is greater than 60, instead display the message Please see manager.
 
@@ -128,7 +129,7 @@ end
 grosspay = hrsworked * payrate + (excesshrs * (1.5*payrate))
 
 if excesshrs < 20
-  print "You earned $#{grosspay.round(2)}."
+  print "You earned $#{'%.2f' % grosspay.round(2)}."
 else
   print "See the manager."
 end
