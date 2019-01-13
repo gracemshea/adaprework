@@ -6,7 +6,7 @@ if amount == 0
   puts "Please try again, I don't think you put in a valid amount."
   puts "How much amount do you have to spend on this magical candy?"
   amount = gets.chomp.to_f
-  puts "$#{'%.2f' % amo unt.round(2)}? Is that all? Well, let's take a look at what we have."
+  puts "$#{'%.2f' % amount.round(2)}? Is that all? Well, let's take a look at what we have."
 else
   puts "$#{'%.2f' % amount.round(2)}? Is that all? Well, let's take a look at what we have."
 end
@@ -31,7 +31,7 @@ p6 = 1.50
 
 def returnchange(amount, price)
   puts "\nExcellent choice, if I do say so myself!"
-	puts "Please take your candy, and your $#{'%.2f' % (amount - price)} change."
+	puts "Please take your candy, and your $#{'%.2f' % (amount - price)} in change."
 end
 
 if selected == 'A' && amount >= p1
