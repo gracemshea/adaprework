@@ -50,7 +50,6 @@ else if x >= 100
 else print "TWO DIGITS"
 end
 end
-#I don't know why, but repl.it only accepted this once I'd put a second "end"
 
 #Prompt for a jersey number. If that number is 12, 71, or 80, print That number is retired from the Seattle Seahawks!, otherwise do nothing.
 
@@ -93,8 +92,8 @@ elsif beverage == "grande"
 elsif beverage == "venti"
   print "That beverage contains 20 ounces."
 end
-#I feel like there is a more elegant way to do the above... will be looking into it.
 
+#I feel like there is a more elegant way to do the above... will be looking into it.
 #Prompt for rate of pay and hours worked. Calculate gross pay. Provide time-and-a-half for hours worked beyond 40 (e.g., if you get paid $10/hr and work 45 hours in a week, you would gross $475 (40 x 10 + 5 x 15).
 
 puts "Please enter rate of pay"
@@ -112,7 +111,7 @@ grosspay = hrsworked * payrate + (excesshrs * (1.5*payrate))
 print "You earned $#{grosspay.round(2)}."
 
 end
-#tried to get this to return 2 decimal places... still working on it.
+  
 #Rewrite the solution to the previous problem adding this modification: do not process any employee if their hours worked is greater than 60, instead display the message Please see manager.
 
 puts "Please enter rate of pay"
