@@ -31,13 +31,13 @@ p6 = 1.50
 
 def returnchange(amount, price)
   puts "\nExcellent choice, if I do say so myself!"
-	puts "Please take your candy, and your $#{'%.2f' % (amount - price)} in change."
+  puts "Please take your candy, and your $#{'%.2f' % (amount - price)} in change."
 end
 
 if selected == 'A' && amount >= p1
-	returnchange amount, p1
+  returnchange amount, p1
 elsif selected == 'B' && amount >= p2
-	returnchange amount, p2
+  returnchange amount, p2
 elsif selected == 'C' && amount >= p3
  returnchange amount, p3
 elsif selected == 'D' && amount >= p4
@@ -47,6 +47,6 @@ elsif selected == 'E' && amount >= p5
 elsif selected == 'F' && amount >= p6
  returnchange amount, p6
 else
-	puts "Your selection was invalid. Either you didn't select A, B, C, D, E, or F or you do not have sufficient funds for this purchase."
+  puts "Your selection was invalid. Either you didn't select A, B, C, D, E, or F or you do not have sufficient funds for this purchase."
 end
 
