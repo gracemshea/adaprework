@@ -3,7 +3,7 @@
 puts "Please enter score."
 score = gets.chomp.to_i
 
-if score > 90
+if score > 70
   print "PASSING"
 else print "NOT PASSING"
 end
