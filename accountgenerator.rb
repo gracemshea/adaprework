@@ -2,8 +2,6 @@
 student_names = []
 student_IDs = []
 student_emails = []
-# overall array
-student_accounts = []
 
 # define number of students and email domain
 num_students = 5
@@ -11,6 +9,7 @@ domain = "ada.edu"
 
 # create accountGenerator loop
 def accountGenerator(num_students, domain)
+  # overall array
   student_accounts = []
   num_students.times do
     print "Please enter the first and last name:"
